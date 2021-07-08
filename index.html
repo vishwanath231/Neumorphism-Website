@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Site</title>
+    <link rel="icon" href="assets/img/icon.png">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/switcher.css">
+    <!-- Default color skin -->
+    <link rel="stylesheet" href="assets/css/skins/color-1.css">
+    <link rel="stylesheet" href="assets/font/css/all.css">
+    <link rel="stylesheet" class="alternate-style" title="color-1" href="assets/css/skins/color-1.css">
+    <link rel="stylesheet" class="alternate-style" title="color-2" href="assets/css/skins/color-2.css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="color-3" href="assets/css/skins/color-3.css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="color-4" href="assets/css/skins/color-4.css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="color-5" href="assets/css/skins/color-5.css" disabled>
+</head>
+<body>
+
+    <!-- preloader start -->
+    <div class="preloader">
+        <div class="box">
+            <div></div><div></div><div></div>
+        </div>
+    </div>
+    <!-- preloader end -->
+
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <div class="row justify-content-bwt">
+                <div class="logo">
+                    <a href="index.html">V</a>
+                </div>
+                <div class="hamburger-btn outer-shadow hover-in-shadow">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- END OF HEADER -->
+
+    <!-- NAVIGATION -->
+    <nav class="nav-menu">
+        <div class="close-nav-menu outer-shadow hover-in-shadow">&times;</div>
+        <div class="nav-menu-inner">
+            <ul>
+                <li><a href="#Home" class="link-item inner-shadow active">Home</a></li>
+                <li><a href="inc/about.html" class="link-item outer-shadow hover-in-shadow">About</a></li>
+                <li><a href="inc/profile.html" class="link-item outer-shadow hover-in-shadow">Profile</a></li>
+                <li><a href="inc/services.html" class="link-item outer-shadow hover-in-shadow">Service</a></li>
+                <li><a href="inc/pricing.html" class="link-item outer-shadow hover-in-shadow">Pricing</a></li>
+                <li><a href="inc/blog.html" class="link-item outer-shadow hover-in-shadow">Blog</a></li>
+                <li><a href="inc/contact.html" class="link-item outer-shadow hover-in-shadow">Contact</a></li>
+            </ul>
+        </div>
+        <p class="copyright-text">Created by <a href="inc/about.html">Vishwanath</a> | &copy; 2020</p>
+    </nav>
+    <div class="fade-out-effect"></div>
+    <!-- END OF NAVIGATION -->
+
+    <!-- HOME -->
+
+    <section class="home-section">
+        <div class="effect-wrap">
+            <div class="effect effect-1"></div>
+            <div class="effect effect-2">
+                <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+            </div>
+            </div>
+            <div class="effect effect-3"></div>
+            <div class="effect effect-4"></div>
+        </div>
+        <div class="container">
+            <div class="row full-screen align-items-center">
+                <div class="home-text">
+                    <p>Hello</p>
+                    <h2>I'm Joseph Garth</h2>
+                    <h1>Web Designer & Developer</h1>
+                    <a href="inc/profile.html" class="link-item btn-1 outer-shadow hover-in-shadow">More About Me</a>
+                </div>
+                <div class="home-img">
+                    <div class="img-box inner-shadow">
+                        <img src="assets/img/home.png" alt="" class="outer-shadow">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- END OF HOME -->
+
+    <!-- STYLE SWITCHER START -->
+    <div class="style-switcher outer-shadow">
+        <div class="style-switcher-toggler s-icon outer-shadow hover-in-shadow">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon outer-shadow hover-in-shadow">
+            <i class="fas"></i>
+        </div>
+
+        <h4>Theme Colors</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+        </div>
+    </div>
+    
+
+    
+    <!-- REGISTER -->
+    <div class="sign-switcher">
+        <div class="sign-switcher-toggler sign-icon outer-shadow hover-in-shadow">
+            <i class="fas fa-users"></i>
+        </div>
+        <a href="inc/signIn.html" class="btn-1 outer-shadow hover-in-shadow">Sign-In</a>
+        <a href="inc/signUp.html" class="btn-1 outer-shadow hover-in-shadow">Sign-Up</a>
+    </div>
+    <!-- END OF REDISTER -->
+   
+    <!-- SCRIPT -->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/switcher.js"></script>
+
+    <script>
+
+        window.addEventListener("load", ()=>{
+            //preloader
+            document.querySelector(".preloader").classList.add("fade-out");
+            setTimeout(() => {
+                document.querySelector(".preloader").style.display="none";
+            },600)
+        })
+
+    </script>
+    
+</body>
+</html>

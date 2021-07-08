@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signUp</title>
+    <link rel="icon" href="../assets/img/icon.png">
+    <link rel="stylesheet" href="../assets/css/signUp.css">
+    <link rel="stylesheet" href="../assets/css/switcher.css">
+    <!-- Default color skin -->
+    <link rel="stylesheet" href="../assets/css/skins/color-1.css">
+    <link rel="stylesheet" href="../assets/font/css/all.css">
+    <link rel="stylesheet" class="alternate-style" title="color-1" href="../assets/css/skins/color-1.css">
+    <link rel="stylesheet" class="alternate-style" title="color-2" href="../assets/css/skins/color-2.css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="color-3" href="../assets/css/skins/color-3.css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="color-4" href="../assets/css/skins/color-4.css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="color-5" href="../assets/css/skins/color-5.css" disabled>
+</head>
+<body>
+
+    <!-- SCROLL-UP-BTN -->
+    <div class="scroll-up-btn outer-shadow hover-in-shadow">
+        <i class="fas fa-caret-up"></i>
+    </div>
+
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <div class="row justify-content-bwt">
+                <div class="logo">
+                    <a href="../index.html">V</a>
+                </div>
+                <div class="hamburger-btn outer-shadow hover-in-shadow">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- END OF HEADER -->
+
+    <!-- NAVIGATION -->
+    <nav class="nav-menu">
+        <div class="close-nav-menu outer-shadow hover-in-shadow">&times;</div>
+        <div class="nav-menu-inner">
+            <ul>
+                <li><a href="../index.html" class="link-item outer-shadow hover-in-shadow">Home</a></li>
+                <li><a href="about.html" class="link-item outer-shadow hover-in-shadow">About</a></li>
+                <li><a href="profile.html" class="link-item outer-shadow hover-in-shadow">Profile</a></li>
+                <li><a href="services.html" class="link-item outer-shadow hover-in-shadow">Service</a></li>
+                <li><a href="pricing.html" class="link-item outer-shadow hover-in-shadow">Pricing</a></li>
+                <li><a href="blog.html" class="link-item outer-shadow hover-in-shadow">Blog</a></li>
+                <li><a href="contact.html" class="link-item outer-shadow hover-in-shadow">Contact</a></li>
+            </ul>
+        </div>
+        <p class="copyright-text">Created by <a href="profile.html">Vishwanath</a> | &copy; 2020</p>
+    </nav>
+    <div class="fade-out-effect"></div>
+    <!-- END OF NAVIGATION -->
+
+    <!-- ACCOUNT -->
+    <section class="account">
+        <div class="container">
+            <div class="account-box outer-shadow">
+                <h2>Sign in to our platform</h2>
+                <div class="group">
+                   
+                    <form action="#" method="POST" onsubmit="return validate()">
+                        <p>Name</p>
+                        <div class="group-flex">
+                            <i class="fas fa-user-alt outer-shadow"></i>
+                            <input type="text"  placeholder="Name" class="inner-shadow" id="name">
+                            <p id="para-1"></p>
+                        </div>
+                         <p>Your email</p>
+                        <div class="group-flex">
+                            <i class="fas fa-envelope outer-shadow"></i>
+                            <input type="email" placeholder="example@company.com" class="inner-shadow" id="mail">
+                            <p id="para-2"></p>
+                        </div>
+                         <p>Password</p>
+                        <div class="group-flex">
+                            <i class="fas fa-unlock-alt outer-shadow"></i>
+                            <input type="password" placeholder="Password"  class="inner-shadow" id="pass">
+                            <p id="para-3"></p>
+                        </div>
+                        
+                        <div class="group-flex-1">
+                            <div style="display: flex;">
+                                <input type="checkbox"  class="inner-shadow">
+                                <p>Remember me</p>
+                            </div>
+                            <div>
+                                <a href="#" style="color: #666666; font-size: 16px; font-weight: 500;">Lost password?</a>
+                            </div>
+                        </div>
+
+                        <button class="btn outer-shadow hover-in-shadow">Sign in</button>
+                    </form>
+                </div>
+
+                <h3>or login with</h3>
+                <div class="icon">
+                    <a href="#"><i class="fab fa-facebook-f outer-shadow hover-in-shadow"></i></a>
+                    <a href="#"><i class="fab fa-twitter outer-shadow hover-in-shadow"></i></a>
+                    <a href="#"><i class="fab fa-github outer-shadow hover-in-shadow"></i></a>
+                </div>
+                <h4>Not registered? <a href="signUp.html" class="sign">Create account</a></h4>
+
+            </div>
+        </div>
+    </section>
+    <!-- END OF ACCOUNT -->
+
+
+
+   
+
+    <!-- STYLE SWITCHER START -->
+    <div class="style-switcher outer-shadow">
+        <div class="style-switcher-toggler s-icon outer-shadow hover-in-shadow">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon outer-shadow hover-in-shadow">
+            <i class="fas"></i>
+        </div>
+
+        <h4>Theme Colors</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+        </div>
+    </div>
+
+    <!-- REGISTER -->
+    <div class="sign-switcher">
+        <div class="sign-switcher-toggler sign-icon outer-shadow hover-in-shadow" style="margin-top: 15px;">
+            <i class="fas fa-users"></i>
+        </div>
+        <a href="signUp.html" class="btn-1 outer-shadow hover-in-shadow">Sign-Up</a>
+    </div>
+    <!-- END OF REDISTER -->
+    
+    <!-- SCRIPT -->
+    <script src="../assets/js/switcher.js"></script>
+    <script src="../assets/plugin/jquery.min.js"></script>
+    <script src="../assets/plugin/counterup.min.js"></script>
+    <script src="../assets/plugin/waypoints.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+
+    <script>
+
+    function validate() {
+        var box1 = document.getElementById("name");
+
+        if (box1.value=="") {
+            document.getElementById("para-1").innerHTML ="! please fill out this field.";
+            box1.focus();
+            return false;
+        }
+
+        var box2 = document.getElementById("mail");
+
+    if (box2.value=="") {
+        document.getElementById("para-2").innerHTML ="! please fill out this field.";
+        box2.focus();
+        return false;
+    }
+
+    var box3 = document.getElementById("pass");
+
+    if (box3.value=="") {
+        document.getElementById("para-3").innerHTML ="! please fill out this field.";
+        box3.focus();
+        return false;
+    }
+    if (box3.value.length<=5) {
+        document.getElementById("para-3").innerHTML ="! Enter the maxmium 6 character";
+        box3.focus();
+        return false;
+    }
+        alert ("Hi"+" "+box1.value);
+    }
+
+    </script>
+
+    
+</body>
+</html>
