@@ -16,4 +16,4 @@
 
 <hr>
 
-<p align="center">Thanks for coming, Keep coming ❤️ </p>
+<p align="center">Thanks for coming, Keep coming ❤️.</p>
